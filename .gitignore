@@ -1,0 +1,6 @@
+*.pbix
+*.xlsx
+*.csv
+*.zip
+__pycache__/
+.DS_Store
