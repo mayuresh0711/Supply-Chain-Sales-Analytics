@@ -87,8 +87,8 @@ GROUP BY
 /* ---------------------------------------------------------------------------
 Validation Queries (Optional – dev only)
 --------------------------------------------------------------------------- */
--- SELECT * FROM reports.v_dashboard_product_customer LIMIT 50;
--- SELECT year, month, SUM(total_sales)
--- FROM reports.v_dashboard_product_customer
--- GROUP BY year, month
--- ORDER BY year, month;
+SELECT * FROM reports.v_dashboard_product_customer LIMIT 50;
+SELECT year, month, SUM(total_sales)
+FROM reports.v_dashboard_product_customer
+GROUP BY year, month
+ORDER BY year, month;

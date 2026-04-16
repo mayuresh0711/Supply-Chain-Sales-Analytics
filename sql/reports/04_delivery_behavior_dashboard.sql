@@ -84,17 +84,17 @@ Validation Queries (Optional – Dev Only)
 --------------------------------------------------------------------------- */
 
 -- Delivery status sanity
--- SELECT delivery_status, COUNT(*) 
--- FROM reports.v_dashboard_delivery
--- GROUP BY delivery_status;
+SELECT delivery_status, COUNT(*) 
+FROM reports.v_dashboard_delivery
+GROUP BY delivery_status;
 
 -- Payment method sanity
--- SELECT payment_type, COUNT(*) 
--- FROM reports.v_dashboard_delivery
--- GROUP BY payment_type;
+SELECT payment_type, COUNT(*) 
+FROM reports.v_dashboard_delivery
+GROUP BY payment_type;
 
 -- Late vs on-time distribution
--- SELECT
---     SUM(late_delivery_orders) AS late,
---     SUM(ontime_orders)        AS ontime
--- FROM reports.v_dashboard_delivery;
+SELECT
+    SUM(late_delivery_orders) AS late,
+    SUM(ontime_orders) AS ontime
+FROM reports.v_dashboard_delivery;

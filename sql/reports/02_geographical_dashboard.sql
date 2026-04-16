@@ -72,6 +72,6 @@ GROUP BY
 /* ---------------------------------------------------------------------------
 Validation Queries (Optional – dev only)
 --------------------------------------------------------------------------- */
--- SELECT * FROM reports.v_dashboard_geo LIMIT 50;
--- SELECT market, SUM(total_sales) FROM reports.v_dashboard_geo GROUP BY market;
--- SELECT order_region, SUM(total_orders) FROM reports.v_dashboard_geo GROUP BY order_region;
+SELECT * FROM reports.v_dashboard_geo LIMIT 50;
+SELECT market, SUM(total_sales) FROM reports.v_dashboard_geo GROUP BY market;
+SELECT order_region, SUM(total_orders) FROM reports.v_dashboard_geo GROUP BY order_region;

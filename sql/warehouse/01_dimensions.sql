@@ -61,7 +61,7 @@ FROM (
 ) d
 WHERE dt IS NOT NULL;
 
-
+select * from warehouse.dim_date limit 100;
 /* ============================================================================
    2. CUSTOMER DIMENSION
 ============================================================================ */
@@ -105,6 +105,8 @@ SELECT DISTINCT
 FROM staging.dataco_clean
 WHERE customer_id IS NOT NULL;
 
+select * from warehouse.dim_customer limit 100;
+
 
 /* ============================================================================
    3. PRODUCT DIMENSION
@@ -145,3 +147,7 @@ SELECT DISTINCT
     product_status
 FROM staging.dataco_clean
 WHERE product_card_id IS NOT NULL;
+
+select * from warehouse.dim_products limit 100;
+
+

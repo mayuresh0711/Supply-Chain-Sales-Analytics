@@ -1,6 +1,9 @@
 --1️⃣ Foreign Key Indexes (Fast Star Joins)
-CREATE INDEX IF NOT EXISTS idx_fact_order_date
-ON warehouse.fact_order_items (order_date_id);
+CREATE INDEX IF NOT EXISTS idx_fact_customer_key
+ON warehouse.fact_order_items (customer_key);
+
+CREATE INDEX IF NOT EXISTS idx_fact_product_key
+ON warehouse.fact_order_items (product_key);
 
 --2️⃣ Date Index (Time-Based Analysis)
 CREATE INDEX IF NOT EXISTS idx_fact_order_date

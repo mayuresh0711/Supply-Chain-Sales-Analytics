@@ -174,6 +174,9 @@ WHERE o.order_datetime IS NOT NULL;
 ============================================================================ */
 --Validation Query
 
+select * from warehouse.fact_order_items limit 100;
+
+
 SELECT column_name, data_type
 FROM information_schema.columns
 WHERE table_schema = 'warehouse'

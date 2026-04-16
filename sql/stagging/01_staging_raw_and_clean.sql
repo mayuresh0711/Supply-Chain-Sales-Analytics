@@ -97,7 +97,7 @@ CREATE TABLE staging.dataco_raw (
 /* ============================================================================
    3. BASIC RAW DATA VALIDATION (OPTIONAL, READ-ONLY)
 ============================================================================ */
-
+select * from staging.dataco_raw limit 100;
 -- Row count
 SELECT COUNT(*) AS raw_row_count FROM staging.dataco_raw;
 

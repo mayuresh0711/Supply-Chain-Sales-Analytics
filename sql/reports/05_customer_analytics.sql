@@ -72,6 +72,6 @@ GROUP BY
 /* ---------------------------------------------------------------------------
 Validation Queries (Optional – Dev Only)
 --------------------------------------------------------------------------- */
--- SELECT customer_status, COUNT(*) 
--- FROM reports.v_customer_churn_risk
--- GROUP BY customer_status;
+SELECT customer_status,COUNT(*) 
+FROM reports.v_customer_churn_risk
+GROUP BY customer_status;

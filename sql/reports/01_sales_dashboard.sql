@@ -92,5 +92,5 @@ GROUP BY
 /* ---------------------------------------------------------------------------
 Validation Queries (Optional – use during development only)
 --------------------------------------------------------------------------- */
--- SELECT * FROM reports.v_dashboard_sales LIMIT 50;
--- SELECT year, SUM(total_sales) FROM reports.v_dashboard_sales GROUP BY year;
+SELECT * FROM reports.v_dashboard_sales LIMIT 50;
+SELECT year, SUM(total_sales) FROM reports.v_dashboard_sales GROUP BY year;
